@@ -739,7 +739,7 @@ if (homePage) {
 
     // === Clear Cache ===
     function clearCache() {
-        if (localStorage == true) {
+        if (localStorage.getItem('currentRaceData') !== null) {
             // grab data from localStorage with date value to compare against
             const currentRaceData = JSON.parse(localStorage.getItem('currentRaceData'));
 
